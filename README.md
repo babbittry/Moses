@@ -18,9 +18,13 @@ A four-wheel drive smart car with Mecanum wheels. 10 actions such as forward and
 ## 硬件组成
 
 主控芯片：STM32F103C8T6
+
 电机驱动：L298N
+
 蓝牙模块：HC-05
+
 电动机：TT电机
+
 电池：18650 * 2
 
 ## TODOLIST
