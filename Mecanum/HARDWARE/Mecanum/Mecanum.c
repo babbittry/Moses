@@ -83,58 +83,60 @@ void back(void)		//向后
 
 void left(void)		//左
 {
-	leftFrontForward();		//左前轮向前转
-	rightFronBackward();	//右前轮向后转
-	leftRearBackward();		//左后轮向后转
-	rightRearForward();		//右后轮向前转
+	leftFronBackward();		//左前轮向后转
+	rightFrontForward();	//右前轮向前转
+	leftRearForward();		//左后轮向前转
+	rightRearBackward();	//右后轮向后转
 }
 
 void right(void)		//右
 {
-	leftFronBackward();		//左前轮向后转
-	rightFrontForward();	//右前轮向前转
-	leftRearForward();		//左后轮向前转
-	rightRearBackward();	//右后轮向后转
+	
+	leftFrontForward();		//左前轮向前转
+	rightFronBackward();	//右前轮向后转
+	leftRearBackward();		//左后轮向后转
+	rightRearForward();		//右后轮向前转
 }
 
 void leftGo(void)		//左前
 {
-	leftFrontForward();		//左前轮向前转
-	rightRearForward();		//右后轮向前转
+	rightFrontForward();	//右前轮向前转
+	leftRearForward();		//左后轮向前转
 }
 
 void rightGo(void)		//右前
 {
-	rightFrontForward();	//右前轮向前转
-	leftRearForward();		//左后轮向前转
+	
+	leftFrontForward();		//左前轮向前转
+	rightRearForward();		//右后轮向前转
 }
 
 void leftBack(void)		//左后
-{
-	rightFronBackward();	//右前轮向后转
-	leftRearBackward();		//左后轮向后转
-}
-
-void rightBack(void)		//右后
 {
 	leftFronBackward();		//左前轮向后转
 	rightRearBackward();	//右后轮向后转
 }
 
-void clockwise(void)		//顺时针
+void rightBack(void)		//右后
 {
-	leftFrontForward();		//左前轮向前转
 	rightFronBackward();	//右前轮向后转
-	leftRearForward();		//左后轮向前转
-	rightRearBackward();	//右后轮向后转
+	leftRearBackward();		//左后轮向后转
 }
 
-void reverse(void)		//逆时针,因为counterclockwise太长了，超出蓝牙传输限制
+void clockwise(void)		//顺时针
 {
 	leftFronBackward();		//左前轮向后转
 	rightFrontForward();	//右前轮向前转
 	leftRearBackward();		//左后轮向后转
 	rightRearForward();		//右后轮向前转
+}
+
+void reverse(void)		//逆时针,因为counterclockwise太长了，超出蓝牙传输限制
+{
+	leftFrontForward();		//左前轮向前转
+	rightFronBackward();	//右前轮向后转
+	leftRearForward();		//左后轮向前转
+	rightRearBackward();	//右后轮向后转
 }
 
 void stop(void)
