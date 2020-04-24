@@ -23,10 +23,11 @@ A four-wheel drive smart car with Mecanum wheels. 10 actions such as forward and
 
 蓝牙模块：HC-05
 
-电动机：TT电机
+电动机：TT电机（减速比1：48）
 
 电池：18650 * 2
 
 ## TODOLIST
 
 - 安卓 APP
+- PWM 调速
